@@ -1,11 +1,14 @@
+#zama-emoji{
+  display: inline-block;
+  vertical-align: top;
+}
 .zama-emoji {
   width: 120px;
   height: 120px;
-  margin: 15px 15px 40px;
   background: #ffda6a;
-  display: inline-block;
   border-radius: 50%;
   position: relative;
+  display: inline-block;
 }
 .zama-emoji:after {
   position: absolute;
@@ -54,9 +57,7 @@
 .emoji--like {
   background: #548dff;
 }
-.emoji--like:after {
-  content: "Like";
-}
+
 .emoji--like .emoji__hand {
   left: 25px;
   bottom: 30px;
@@ -108,9 +109,7 @@
 .emoji--love {
   background: #f55064;
 }
-.emoji--love:after {
-  content: "Love";
-}
+
 .emoji--love .emoji__heart {
   left: calc(50% - 40px);
   top: calc(50% - 40px);
@@ -141,9 +140,6 @@
   transform-origin: 100% 100%;
 }
 
-.emoji--haha:after {
-  content: "Haha";
-}
 .emoji--haha .emoji__face {
   -webkit-animation: haha-face 2s linear infinite;
   animation: haha-face 2s linear infinite;
@@ -192,7 +188,6 @@
 }
 
 .emoji--yay:after {
-  content: "Yay";
   -webkit-animation: yay-reverse 1s linear infinite;
   animation: yay-reverse 1s linear infinite;
 }
@@ -258,9 +253,6 @@
     -35px -2px 30px 10px #d5234c, 35px -2px 30px 10px #d5234c;
 }
 
-.emoji--wow:after {
-  content: "Wow";
-}
 .emoji--wow .emoji__face {
   -webkit-animation: wow-face 3s linear infinite;
   animation: wow-face 3s linear infinite;
@@ -315,9 +307,6 @@
   animation: wow-mouth 3s linear infinite;
 }
 
-.emoji--sad:after {
-  content: "Sad";
-}
 .emoji--sad .emoji__face {
   -webkit-animation: sad-face 2s ease-in infinite;
   animation: sad-face 2s ease-in infinite;
@@ -406,9 +395,7 @@
   -webkit-animation: angry-color 2s ease-in infinite;
   animation: angry-color 2s ease-in infinite;
 }
-.emoji--angry:after {
-  content: "Angry";
-}
+
 .emoji--angry .emoji__face {
   -webkit-animation: angry-face 2s ease-in infinite;
   animation: angry-face 2s ease-in infinite;
@@ -972,4 +959,42 @@
     height: 6px;
     bottom: 25px;
   }
+}
+.zama-emoji.xxs{
+  transform: scale(0.15);
+  margin: -51px;
+}
+
+.zama-emoji.xs{
+  transform: scale(0.2);
+  margin: -47px;
+}
+
+.zama-emoji.sm{
+  transform: scale(0.3);
+  margin: -42px;
+}
+
+.zama-emoji.md{
+  transform: scale(0.5);
+  margin: -30px;
+}
+
+.zama-emoji.lg{
+  transform: scale(0.7);
+  margin: -18px;
+}
+
+.zama-emoji.xl{
+  transform: scale(1);
+}
+
+.zama-emoji.xxl{
+  transform: scale(1.5);
+  margin: 30px;
+}
+
+.zama-emoji.xxxl{
+  transform: scale(3);
+  margin: 120px;
 }

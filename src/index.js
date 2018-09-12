@@ -1,73 +1,65 @@
 import React, { Component } from "react";
 import "./facebook-emojis.css";
 
-export class FacebookEmoji extends Component {
+export default class FacebookEmoji extends Component {
  
   render() {
+    let Emoji = emojis["like"];
+    if (this.props.hasOwnProperty('type')) {
+      Emoji = emojis[this.props.type] ? emojis[this.props.type] : emojis["like"];
+    }
     return (
       <div id="zama-emoji">
-        {emojis[this.props.name] ? emojis[this.props.name] : emojis["like"]}
+        <Emoji size={this.props.size} />
       </div>
     );
   }
 }
 
 const emojis = {
-  like: (
-    <div className="zama-emoji  emoji--like">
+  like: (props) => <div className={'zama-emoji emoji--like ' + (props.size? props.size: 'md')}>
       <div className="emoji__hand">
         <div className="emoji__thumb" />
       </div>
     </div>
-  ),
-  love: (
-    <div className="zama-emoji  emoji--love">
+  ,
+  love: (props) => <div className={'zama-emoji emoji--love ' + (props.size? props.size: 'md')}>
       <div className="emoji__heart" />
     </div>
-  ),
-  haha: (
-    <div className="zama-emoji  emoji--haha">
+  ,
+  haha: (props) => <div className={'zama-emoji emoji--haha ' + (props.size? props.size: 'md')}>
       <div className="emoji__face">
         <div className="emoji__eyes" />
         <div className="emoji__mouth">
           <div className="emoji__tongue" />
         </div>
       </div>
-    </div>
-  ),
-  yay: (
-    <div className="zama-emoji  emoji--yay">
+    </div>,
+  yay: (props) => <div className={'zama-emoji emoji--yay ' + (props.size? props.size: 'md')}>
       <div className="emoji__face">
         <div className="emoji__eyebrows" />
         <div className="emoji__mouth" />
       </div>
-    </div>
-  ),
-  wow: (
-    <div className="zama-emoji  emoji--wow">
+    </div>,
+  wow: (props) => <div className={'zama-emoji emoji--wow ' + (props.size? props.size: 'md')}>
+      <div className="emoji__face">
+        <div className="emoji__eyebrows" />
+        <div className="emoji__eyes" />
+        <div className="emoji__mouth" />
+      </div>
+    </div>,
+  sad: (props) => <div className={'zama-emoji emoji--sad ' + (props.size? props.size: 'md')}>
+      <div className="emoji__face">
+        <div className="emoji__eyebrows" />
+        <div className="emoji__eyes" />
+        <div className="emoji__mouth" />
+      </div>
+    </div>,
+  angry: (props) => <div className={'zama-emoji emoji--angry ' + (props.size? props.size: 'md')}>
       <div className="emoji__face">
         <div className="emoji__eyebrows" />
         <div className="emoji__eyes" />
         <div className="emoji__mouth" />
       </div>
     </div>
-  ),
-  sad: (
-    <div className="zama-emoji  emoji--sad">
-      <div className="emoji__face">
-        <div className="emoji__eyebrows" />
-        <div className="emoji__eyes" />
-        <div className="emoji__mouth" />
-      </div>
-    </div>
-  ),
-  angry: (
-    <div className="zama-emoji  emoji--angry">
-      <div className="emoji__face">
-        <div className="emoji__eyebrows" />
-        <div className="emoji__eyes" />
-        <div className="emoji__mouth" />
-      </div>
-    </div>
-  )
 };
