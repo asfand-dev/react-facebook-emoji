@@ -1,6 +1,9 @@
 # React Facebook Emoji
 Easy to use facebook animated Emojis
 
+## See it in action
+[demo](https://asfandiyark7.github.io/react-facebook-emoji)
+
 ## How to use it
 
 ### Install the npm package
@@ -18,7 +21,7 @@ export const sampleComponent = () => (
 );
 ```
 ### Preview
-![preview](https://raw.githubusercontent.com/asfandiyark7/react-facebook-emoji/master/docs/images/single.png)
+![preview](https://raw.githubusercontent.com/asfandiyark7/react-facebook-emoji/master/docs/images/single.gif)
 
 
 Property | Values | Default Value
@@ -45,7 +48,7 @@ export const sampleComponent = () => (
 );
 ```
 ### Preview
-![Types](https://raw.githubusercontent.com/asfandiyark7/react-facebook-emoji/master/docs/images/types.png)
+![Types](https://raw.githubusercontent.com/asfandiyark7/react-facebook-emoji/master/docs/images/types.gif)
 
 
 ### Using different sizes
@@ -67,7 +70,7 @@ export const sampleComponent = () => (
 );
 ```
 ### Preview
-![Sizes](https://raw.githubusercontent.com/asfandiyark7/react-facebook-emoji/master/docs/images/sizes.png)
+![Sizes](https://raw.githubusercontent.com/asfandiyark7/react-facebook-emoji/master/docs/images/sizes.gif)
 
 
 Please feel free to contact if you have any problem while using this package, I always like to help and solve the problems of other people.

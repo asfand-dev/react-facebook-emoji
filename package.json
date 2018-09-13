@@ -1,9 +1,9 @@
 {
   "name": "react-facebook-emoji",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "Easy to use Facebook emojis for react applications",
   "main": "dist/index.js",
-  "homepage": "https://asfandiyark7.github.io/react-facebook-emoji",
+  "homepage": "https://github.com/asfandiyark7/react-facebook-emoji",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
