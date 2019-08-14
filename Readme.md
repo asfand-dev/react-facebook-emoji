@@ -4,13 +4,6 @@ Easy to use facebook animated Emojis
 ## See it in action
 [demo](https://asfandiyark7.github.io/react-facebook-emoji)
 
-## Backers
-<p align="center">
-  <a href="https://dronerivals.com">
-    <img src="https://dronerivals.com/wp-content/uploads/2019/03/drone-rival-logo-2-jpeg-file-black-e1553272464373.jpg" width="50" title="$50 by dronerivals.com">
-  </a>
-</p>
-
 ## How to use it
 ### Install the npm package
 ```sh
