@@ -2,7 +2,7 @@
 Easy to use facebook animated Emojis
 
 ## See it in action
-[demo](https://asfandiyark7.github.io/react-facebook-emoji)
+[demo](https://asfand-dev.github.io/react-facebook-emoji/)
 
 ## How to use it
 ### Install the npm package
@@ -74,5 +74,5 @@ export const sampleComponent = () => (
 
 Please feel free to contact if you have any problem while using this package, I always like to help and solve the problems of other people.
 
-Email:  asfand.dev@gmail.com
-Website:  [asfand.info](https://asfand.info)
+Email:  asfand.dev@gmail.com<br />
+Website:  [asfand-dev.github.io](https://asfand-dev.github.io)
